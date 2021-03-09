@@ -41,7 +41,7 @@ public class Solution {
                 }
             }
 
-            if (result instanceof C) {
+            if (result instanceof C) { //ошибка была тут
                 C p = (C) result;
                 System.out.println(p.getClass().getSimpleName());
             }
