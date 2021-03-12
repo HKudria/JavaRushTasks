@@ -8,6 +8,7 @@ target/
 *.iml
 *.iws
 *.properties
+*.txt
 
 
 /1.JavaSyntax/
