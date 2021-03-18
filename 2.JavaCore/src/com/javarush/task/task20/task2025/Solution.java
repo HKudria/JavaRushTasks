@@ -1,9 +1,6 @@
 package com.javarush.task.task20.task2025;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /* 
 Алгоритмы-числа
@@ -13,7 +10,8 @@ public class Solution {
 
     public static long[] getNumbers(long N) {
 
-       /* ArrayList<Long> l = new ArrayList<>();
+/*
+       TreeSet<Long> l = new TreeSet<>();
         for (long m = 1; m < N; m++) {
             String number = m + "";
             long bg = 0;
@@ -34,12 +32,14 @@ public class Solution {
            }
         }
         long[] result = new long[l.size()];
-        for (int i = 0; i < l.size(); i++) {
-            result[i]=l.get(i);
+        int ii = 0;
+        for (Long ll: l) {
+            result[ii++] = ll;
         }
-        Arrays.sort(result);
+       // Arrays.sort(result);
 
-        */
+*/
+
 
         return null;
     }
