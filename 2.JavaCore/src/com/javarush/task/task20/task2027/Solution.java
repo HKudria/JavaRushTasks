@@ -72,7 +72,7 @@ same - (1, 1) - (4, 1)
                                         if (j==w.length()) {
                                             ex = k-j;
                                             ey = l-j;
-                                            ll.add(new Word(sx,sy,ex,ey));
+                                        //    ll.add(new Word(sx,sy,ex,ey));
                                         }
                                     }
                                 } catch (IndexOutOfBoundsException e){
