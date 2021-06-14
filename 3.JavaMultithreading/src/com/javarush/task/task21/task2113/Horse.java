@@ -18,7 +18,7 @@ public class Horse {
         for (int i = 0; i < (int) distance; i++) {
             System.out.print(".");
         }
-        System.out.print(name);
+        System.out.print(" " + name);
         System.out.println("");
     }
 

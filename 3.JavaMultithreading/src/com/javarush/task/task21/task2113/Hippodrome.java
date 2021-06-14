@@ -14,6 +14,7 @@ public class Hippodrome {
         horses.add(new Horse("horse3",3,0));
         game = new Hippodrome(horses);
         game.run();
+        game.printWinner();
     }
 
     public Hippodrome (List<Horse> horses){
@@ -42,11 +43,28 @@ public class Hippodrome {
         }
     }
 
+    public Horse getWinner(){
+        double max = 0;
+        Horse horse = null;
+        for (int i = 0; i < getHorses().size(); i++) {
+           if(max < getHorses().get(i).getDistance()) {
+               max = getHorses().get(i).getDistance();
+               horse = (Horse) getHorses().get(i);
+           }
+
+        }
+        return horse;
+    }
+
+    public void printWinner(){
+        System.out.println("Winner is " + getWinner().name + "!");
+    }
+
     public void print(){
         for (Horse s: horses) {
             s.print();
         }
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.println("");
         }
     }
