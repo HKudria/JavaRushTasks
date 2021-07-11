@@ -10,7 +10,7 @@ public class Solution {
     public static boolean checkTelNumber(String telNumber) {
         if (telNumber == null) return false;
         if (telNumber.length() <11) return false;
-
+        String s = "Test";
         return  Pattern.matches("^\\+?\\d*(\\(\\d{3}\\))?\\d?-?\\d*-?\\d+$", telNumber);
         /** ^\+ - начало строки символ +
          * ?\d* - или любая цифла в любом количестве
